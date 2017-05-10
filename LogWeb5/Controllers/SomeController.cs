@@ -19,7 +19,7 @@ namespace LogWeb5.Controllers
         public IEnumerable<string> Get()
         {
 
-            using (_logger.BeginScope("Get"))
+            using (_logger.BeginScope("SomeCtrl"))
             {
                 _logger.LogTrace("Some asked to get it!");
 

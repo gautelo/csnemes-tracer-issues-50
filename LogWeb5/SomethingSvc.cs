@@ -22,9 +22,12 @@ namespace LogWeb5
         {
             _logger.LogTrace("Begin DoSomething");
 
-            SideEffects();
+            using (_logger.BeginScope("Do"))
+            {
+                SideEffects();
 
-            _otherSvc.DoOther();
+                _otherSvc.DoOther();
+            }
 
             _logger.LogTrace("End DoSomething");
         }
