@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Weavers>
   <Tracer adapterAssembly="Tracer.NLog"
           logManager="Tracer.NLog.Adapters.LogManagerAdapter"
           logger="Tracer.NLog.Adapters.LoggerAdapter"
           staticLogger="Tracer.NLog.Log"
           traceConstructors="false"
-          traceProperties="true">
-    <TraceOn class="public" method="public" />
+          traceProperties="false">
   </Tracer>
 </Weavers>
